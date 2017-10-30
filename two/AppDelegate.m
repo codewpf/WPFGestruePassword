@@ -24,18 +24,7 @@
     ViewController *vc = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
-    
-    UIControl *view = [[UIControl alloc]initWithFrame:CGRectMake(10, 10, 300, 300)];
-    view.backgroundColor = [UIColor greenColor];
-    [view addTarget:self action:@selector(controlClick:) forControlEvents:UIControlEventTouchUpInside];
-    [nav.view addSubview:view];
-    
-    UIView *view1 = [[UIView alloc]initWithFrame:CGRectMake(50, 50, 200, 200)];
-    view1.backgroundColor = [UIColor redColor];
-    [view addSubview:view1];
 
-
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 

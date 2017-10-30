@@ -326,6 +326,7 @@
         _line.delegate = self;
 //        _line.backgroundColor = [UIColor purpleColor];
         [self addSubview:_line];
+//        [self sendSubviewToBack:_line];
     }
     return _line;
 }

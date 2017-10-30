@@ -25,18 +25,18 @@
     
     for(NSInteger i=0;i<3;i++)
     {
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(10, 80+i*40, 100, 30);
-        [btn setTitle:[NSString stringWithFormat:@"第%ld个",i] forState:UIControlStateNormal];
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        btn.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width-100)/2, 100+i*50, 100, 30);
+        btn.layer.borderColor = [UIColor grayColor].CGColor;
+        btn.layer.borderWidth = 0.5;
+        btn.layer.cornerRadius = 5;
+        [btn setTitle:@[@"新设置",@"修改",@"验证"][i] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         btn.tag = i;
         [self.view addSubview:btn];
         
     }
-    
-    
-    
     
 }
 

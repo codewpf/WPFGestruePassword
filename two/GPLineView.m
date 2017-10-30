@@ -127,6 +127,7 @@
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%@",[NSDate date]);
     UITouch *touch = [touches anyObject];
     if (touch)
     {
@@ -149,6 +150,7 @@
                 [self.touchesArray addObject:btag];
                 [self.pointsArray addObject:[NSValue valueWithCGPoint:buttonTemp.center]];
                 break;
+                
             }
         }
         self.lineEndPoint = touchPoint;

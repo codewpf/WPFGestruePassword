@@ -263,6 +263,7 @@
 				TargetAttributes = {
 					E3256A741BF1F16300E23153 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = RTCETB2ULQ;
 					};
 					E3256A8D1BF1F16300E23153 = {
 						CreatedOnToolsVersion = 7.1;
@@ -521,6 +522,7 @@
 			baseConfigurationReference = 18362EF8A26C451C7B5568EF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RTCETB2ULQ;
 				GCC_PREFIX_HEADER = two/PrefixHeader.pch;
 				INFOPLIST_FILE = two/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,6 +536,7 @@
 			baseConfigurationReference = C596373C0E7995399CA532FA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RTCETB2ULQ;
 				GCC_PREFIX_HEADER = two/PrefixHeader.pch;
 				INFOPLIST_FILE = two/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
